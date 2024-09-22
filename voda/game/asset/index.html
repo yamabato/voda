@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Voda - Connect Four</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+
+  <body>
+    <div id="cover">
+      <h1 id="bye-lbl">Good Bye</h1>
+    </div>
+
+    <div id="title-area">
+      <h1 id="title">Voda - Connect Four</h1>
+    </div>
+
+    <div id="main-area">
+      <div class="side-panel" id="panel-black">
+        <div id="turn">
+          <table id="turn-tbl">
+            <tr class="turn-tbl-row">
+              <th class="turn-tbl-th">Moves:</th>
+              <td id="move-count" class="turn-tbl-td">0</td>
+            </tr>
+            <tr>
+              <th class="turn-tbl-th">Turn:</th>
+              <td id="turn-lbl" class="turn-tbl-td">-</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="players">
+          <table id="players-tbl">
+            <tr class="players-tbl-row">
+              <th class="players-tbl-th">Black:</th>
+              <td id="black-player-lbl" class="players-tbl-td"><span>-</span></td>
+            </tr>
+            <tr class="players-tbl-row">
+              <th class="players-tbl-th">White:</th>
+              <td id="white-player-lbl" class="players-tbl-td">-</td>
+            </tr>
+          </table>
+        </div>
+
+        <button id="start-btn" onclick="startGame();">Start</button>
+        <button id="quit-btn" onclick="quitGame();">Quit</button>
+
+      </div>
+
+      <div id="board-area">
+        <table id="board">
+          <tr id="board-row-5" class="board-row">
+            <td class="board-cell" id="board-05"></td>
+            <td class="board-cell" id="board-11"></td>
+            <td class="board-cell" id="board-17"></td>
+            <td class="board-cell" id="board-23"></td>
+            <td class="board-cell" id="board-29"></td>
+            <td class="board-cell" id="board-35"></td>
+            <td class="board-cell" id="board-41"></td>
+          </tr>
+          <tr id="board-row-4" class="board-row">
+            <td class="board-cell" id="board-04"></td>
+            <td class="board-cell" id="board-10"></td>
+            <td class="board-cell" id="board-16"></td>
+            <td class="board-cell" id="board-22"></td>
+            <td class="board-cell" id="board-28"></td>
+            <td class="board-cell" id="board-34"></td>
+            <td class="board-cell" id="board-40"></td>
+          </tr>
+          <tr id="board-row-3" class="board-row">
+            <td class="board-cell" id="board-03"></td>
+            <td class="board-cell" id="board-09"></td>
+            <td class="board-cell" id="board-15"></td>
+            <td class="board-cell" id="board-21"></td>
+            <td class="board-cell" id="board-27"></td>
+            <td class="board-cell" id="board-33"></td>
+            <td class="board-cell" id="board-39"></td>
+          </tr>
+          <tr id="board-row-2" class="board-row">
+            <td class="board-cell" id="board-02"></td>
+            <td class="board-cell" id="board-08"></td>
+            <td class="board-cell" id="board-14"></td>
+            <td class="board-cell" id="board-20"></td>
+            <td class="board-cell" id="board-26"></td>
+            <td class="board-cell" id="board-32"></td>
+            <td class="board-cell" id="board-38"></td>
+          </tr>
+          <tr id="board-row-1" class="board-row">
+            <td class="board-cell" id="board-01"></td>
+            <td class="board-cell" id="board-07"></td>
+            <td class="board-cell" id="board-13"></td>
+            <td class="board-cell" id="board-19"></td>
+            <td class="board-cell" id="board-25"></td>
+            <td class="board-cell" id="board-31"></td>
+            <td class="board-cell" id="board-37"></td>
+          </tr>
+          <tr id="board-row-0" class="board-row">
+            <td class="board-cell" id="board-00"></td>
+            <td class="board-cell" id="board-06"></td>
+            <td class="board-cell" id="board-12"></td>
+            <td class="board-cell" id="board-18"></td>
+            <td class="board-cell" id="board-24"></td>
+            <td class="board-cell" id="board-30"></td>
+            <td class="board-cell" id="board-36"></td>
+          </tr>
+        </table>
+      <h1 id="result-lbl"></h1>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

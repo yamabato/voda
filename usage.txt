@@ -1,0 +1,49 @@
+# Voda
+コネクトフォーの盤面、ゲーム管理プログラム
+
+## 手順
+1. ゲームの起動
+2. プレイヤー1の起動
+3. プレイヤー2の起動
+
+## ゲームの起動
+1. connect_four/vodaに移動
+2. `go run .`としてゲームを起動する
+3. Webブラウザで`localhost:8080`を開く(ポート番号はコマンドライン引数による)
+
+* コマンドライン引数
+--port  : ブラウザでゲームに接続するポート番号を指定(既定値8080)
+--port1 : プレイヤー1と接続するポート番号を指定(規定値8000)
+--port2 : プレイヤー2と接続するポート番号を指定(既定値8001)
+
+--cli=    : CLIでゲームをプレイするか、true,falseで指定(既定値false)
+--board=  : CLIモードにおいて盤面を表示するか、true,falseで指定(既定値true)
+--result= : CLIモードにおいて結果を表示するか、true,falseで指定(既定値true)
+
+## プレイヤーの起動
+
+### Go版
+1. connect_four/player/plaer_goに移動
+2. `go run .`でプレイヤーを起動
+
+* コマンドライン引数
+--port   : ゲームに接続するポート番号を指定(既定値8000)
+--player : プレイヤー名を指定(既定値random)
+
+* プレイヤー名
+random: RandomPlayer(ランダム)
+g0F   : g0F(乱択アルゴリズム)
+
+### Python版
+1. connect_four/player/plaer_pyに移動
+2. `python3 main.py`でプレイヤーを起動
+
+* コマンドライン引数
+--port   : ゲームに接続するポート番号を指定(既定値8000)
+--player : プレイヤー名を指定(既定値random)
+
+* プレイヤー名
+random: RandomPlayer(ランダム)
+g0F   : g0F(乱択アルゴリズム)
+
+
